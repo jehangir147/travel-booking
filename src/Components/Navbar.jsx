@@ -12,13 +12,13 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className=" w-full px-4 ">
+    <div className=" w-full px-4 absolute z-10 text-white">
       <div className="w-full flex justify-between items-center">
         <div>
           <h3 className=" py-4 text-4xl font-bold">BEACHES.</h3>
@@ -44,7 +44,7 @@ const Navbar = () => {
         className={
           nav
             ? "absolute top-0 left-[-100%] w-full bg-gray-100 px-4 md:hidden ease-out duration-200"
-            : "absolute top-0 left-0 w-full bg-gray-100 px-4 md:hidden ease-in duration-200"
+            : "absolute top-0 left-0 w-full text-black bg-gray-100/90 px-4 md:hidden ease-in duration-200"
         }
       >
         <div className=" flex justify-between items-center">
