@@ -5,6 +5,7 @@ import Destination from "./Components/Destination";
 import Search from "./Components/Search";
 import Selects from "./Components/Selects";
 import Carousel from "./Components/Carousel";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Search />
       <Selects />
       <Carousel />
+      <Footer />
     </div>
   );
 }
